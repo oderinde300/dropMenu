@@ -469,6 +469,10 @@ p {
         background-color: rgba(0, 0, 0, 0.1);
         transition: all .3s ease;
     }
+    .icons img {
+        width: 70px;
+        margin: 10px;
+    }
 
 
 }
