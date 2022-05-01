@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <div class="menu-bar">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" class="logo-img">
+    </div>
+
+    <div class="hamburger">
+      <img src="images/icon-menu.svg" alt="">
+    </div>
+
+    <nav class="nav-1">
+      <ul>
+        <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+          <div class="drop-menu">
+            <ul>
+              <li><a href="#"><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li><a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a></li>
+              <li><a href="#"><img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
+              <li><a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+          <div class="drop-menu-1">
+            <ul>
+              <li><a href="#"> History</a></li>
+              <li><a href="#"> Our Team</a></li>
+              <li><a href="#"> Blog</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <nav class="nav-2">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><button>Register</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="overlay">
+    <div class="mobile-nav">
+      <div class="close-menu">
+        <img src="images/icon-close-menu.svg" alt="">
+      </div>
+
+      <nav class="nav-1m">
+        <ul>
+          <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+            <div class="drop-menu">
+              <ul>
+                <li><a href="#"><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
+                <li><a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a></li>
+                <li><a href="#"><img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
+                <li><a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="company"><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+            <div class="drop-menu-1">
+              <ul>
+                <li><a href="#"> History</a></li>
+                <li><a href="#"> Our Team</a></li>
+                <li><a href="#"> Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="Careers"><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-2m">
+        <ul>
+          <li><a href="#" class="login">Login</a></li>
+          <li><button>Register</button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Make <br>remote work </h1>
+      <p>Get your team in sync, no matter your location. <br>Streaming processes, create team rituals, and <br>watch
+        productivity soar.</p>
+      <div class="button">
+        <button>Learn more</button>
+      </div>
+
+      <div class="icons">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+
+    </div>
+    <div class="hero-img">
+      <img src="images/image-hero-desktop.png" alt="img">
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

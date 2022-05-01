@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.body {
+    background-color: #FAFAFA;
+}
+
+/* MENU BAR */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 200px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+.menu-bar .logo {
+    margin-left: 15px;
+    margin-right: 70px;
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    color: black;
+    transition: all .3s ease;
+}
+
+
+ul {
+    display: flex;
+}
+
+.arrow-down {
+    padding-left: 10px;
+}
+
+.nav-1 ul {
+    align-items: center;
+}
+
+.nav-1 {
+    margin-right: auto;
+    align-self: center;
+}
+
+.nav-2 button {
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.drop-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+.drop-menu-1 li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+}
+
+.nav-2 button:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.nav-2 ul {
+    align-items: center;
+}
+
+.drop-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .drop-menu {
+    position: absolute;
+    display: block;
+    width: 230px;
+    left: -125px;
+    top: 100%;
+    transition: all .3s ease;
+}
+
+.menu-bar ul li:hover .drop-menu ul {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
+    transition: all .3s ease;
+}
+
+.menu-bar ul li:hover .arrow-down {
+    content: url(images/icon-arrow-up.svg);
+    color: black;
+    transition: all .3s ease;
+}
+
+.drop-menu ul li {
+    margin: 15px 15px;
+}
+
+.drop-menu ul li img {
+    padding-right: 10px;
+}
+
+.drop-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .drop-menu-1 {
+    position: absolute;
+    display: block;
+    left: -25%;
+    top: 100%;
+    width: 200px;
+    transition: all .3s ease;
+
+}
+
+.drop-menu-1 ul {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
+    margin: 20px;
+    padding: 20px;
+}
+
+.drop-menu-1 ul li {
+    margin: 15px 15px;
+}
+
+/* END MENU BAR */
+
+
+
+/* HERO SECTION */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-gap: 80px;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 5.5rem;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+p {
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+
+}
+
+
+.hero-text button {
+    padding: 15px 40px;
+    margin-bottom: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.hero-text button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all .3s ease;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* END HERO SECTION */
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 1800px) {
+    .menu-bar {
+        margin: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .menu-bar {
+        margin: 0;
+    }
+
+    .hero {
+        max-width: 700px;
+        grid-template-columns: (2, 300px);
+        gap: 0;
+    }
+}
+
+@media (max-width:950px) {
+    .menu-bar {
+        margin: 0;
+    }
+
+    .hero {
+        max-width: 700px;
+        grid-template-columns: (2, 300px);
+    }
+}
+
+@media (max-width:900px) {
+    .menu-bar {
+        margin: 0;
+    }
+
+    .nav-1 {
+        display: none;
+    }
+
+    .nav-2 {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: repeat(1, 350px);
+        gap: 50px;
+    }
+
+    .hero-img {
+        content: url(images/image-hero-mobile.png);
+        width: 100%;
+        grid-row: 1;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    br {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .hero-text button {
+        margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        background-color: white;
+        height: 100vh;
+        width: 60%;
+        display: block;
+        position: absolute;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .mobile-nav ul li {
+        margin: 15px;
+    }
+
+    .mobile-nav .nav-2m {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .mobile-nav .nav-2m button {
+        padding: 10px 40px;
+        background-color: transparent;
+        outline: none;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+
+    }
+
+    .mobile-nav .nav-2m button:hover {
+        color: black;
+        border: 1px solid black;
+        transition: all .3s ease;
+    }
+
+    .mobile-nav .nav-2m .login {
+        margin-left: 50px;
+    }
+
+    .overlay {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        top: 0;
+        height: 100vh;
+    }
+
+    .close-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 250px;
+    }
+
+    .drop-menu {
+        display: none;
+    }
+
+    .mobile-nav ul li:hover .drop-menu {
+        position: relative;
+        display: block;
+        width: 260px;
+        left: 0px;
+        top: 100%;
+        transition: all .3s ease;
+    }
+
+    .mobile-nav ul li:hover .nav-1m .company {
+        padding-top: 50px;
+        transition: all .3s ease;
+    }
+
+    .mobile-nav ul li:hover .drop-menu ul {
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
+        transition: all .3s ease;
+    }
+
+    .mobile-nav ul li:hover .arrow-down {
+        content: url(images/icon-arrow-up.svg);
+        color: black;
+        transition: all .3s ease;
+    }
+
+    .drop-menu ul li {
+        margin: 15px 15px;
+    }
+
+    .drop-menu ul li img {
+        padding-right: 10px;
+    }
+
+    .drop-menu-1 {
+        display: none;
+    }
+
+    .mobile-nav a {
+        font-size: 1.3rem;
+    }
+
+    .mobile-nav ul li:hover .drop-menu-1 {
+        position: relative;
+        display: block;
+        left: 0%;
+        top: 100%;
+        width: 250px;
+        transition: all .3s ease;
+    }
+
+    .mobile-nav ul li:hover .Careers {
+        margin-top: 100px;
+        transition: all .3s ease;
+    }
+
+    .drop-menu-1 ul {
+        display: block;
+        border-radius: 10px;
+        box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
+        margin: 20px;
+        padding: 20px;
+
+    }
+
+    .drop-menu-1 ul li {
+        margin: 15px 15px;
+    }
+
+    .drop-menu li a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all .3s ease;
+    }
+
+    .drop-menu-1 li a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: all .3s ease;
+    }
+
+
+}
+
+/* END MEDIA QUERY  */
