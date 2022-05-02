@@ -243,6 +243,13 @@ p {
     }
 }
 
+@media (max-width: 1400px){
+    .hero {
+        max-width: 700px;
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
 @media (max-width:1200px) {
     .menu-bar {
         margin: 0;
@@ -255,7 +262,7 @@ p {
     }
 }
 
-@media (max-width:950px) {
+@media (max-width:1000px) {
     .menu-bar {
         margin: 0;
     }
@@ -266,7 +273,7 @@ p {
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:950px) {
     .menu-bar {
         margin: 0;
     }
@@ -342,6 +349,7 @@ p {
         margin: 15px;
     }
 
+
     .mobile-nav .nav-2m {
         align-self: center;
         justify-self: center;
@@ -374,29 +382,17 @@ p {
         background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
         top: 0;
-        height: 100vh;
+        height: 100%;
     }
 
     .close-menu {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 35px;
         margin-left: 150px;
     }
 
-    .drop-menu {
-        display: none;
-    }
-
-    .mobile-nav ul li:hover .drop-menu {
-        position: relative;
-        display: block;
-        width: 260px;
-        left: 0px;
-        top: 100%;
-        transition: all .3s ease;
-    }
-
+    /* Mobile nav design */
     .mobile-nav ul li:hover .nav-1m .company {
         padding-top: 50px;
         transition: all .3s ease;
@@ -407,7 +403,6 @@ p {
         margin: 20px;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
         transition: all .3s ease;
     }
 
@@ -417,63 +412,92 @@ p {
         transition: all .3s ease;
     }
 
+    .mobile-nav a {
+        font-size: 1.3rem;
+    }
+
+    /* End mobile nav design  */
+
+    /* Features drop menu  */
+    .drop-menu {
+        display: none;
+    }
+
+    .mobile-nav ul li:hover .drop-menu {
+        position: relative;
+        display: block;
+        width: 260px;
+        left: -20px;
+        top: 100%;
+        transition: all .3s ease;
+    }
+
     .drop-menu ul li {
         margin: 15px 15px;
+    }
+
+    .drop-menu ul {
+        margin: 0;
     }
 
     .drop-menu ul li img {
         padding-right: 10px;
     }
 
-    .drop-menu-1 {
+        /* End of Features drop menu  */
+
+    
+   
+
+    /* Company Drop Menu */
+
+    .drop-menu-2 {
         display: none;
     }
 
-    .mobile-nav a {
-        font-size: 1.3rem;
-    }
-
-    .mobile-nav ul li:hover .drop-menu-1 {
+    .mobile-nav ul li:hover .drop-menu-2 {
         position: relative;
         display: block;
-        left: 0%;
+        left: -10%;
         top: 100%;
         width: 250px;
+        box-shadow: none;
         transition: all .3s ease;
+        
     }
 
-    .mobile-nav ul li:hover .Careers {
-        margin-top: 100px;
-        transition: all .3s ease;
-    }
-
-    .drop-menu-1 ul {
+    .drop-menu-2 ul {
         display: block;
         border-radius: 10px;
-        box-shadow: 10px 10px 41px 3px rgba(0, 0, 0, 0.08);
         margin: 20px;
         padding: 20px;
 
     }
 
-    .drop-menu-1 ul li {
+    .drop-menu-2 ul li {
         margin: 15px 15px;
     }
+    /* End Company Drop Menu */
 
+
+/* Drop menu hover  */
     .drop-menu li a:hover {
         background-color: rgba(0, 0, 0, 0.1);
         transition: all .3s ease;
     }
 
-    .drop-menu-1 li a:hover {
+    .drop-menu-2 li a:hover {
         background-color: rgba(0, 0, 0, 0.1);
         transition: all .3s ease;
     }
+
+ /* End Drop menu hover  */
+
+
     .icons img {
         width: 70px;
         margin: 10px;
     }
-
 
 }
 
