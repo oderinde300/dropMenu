@@ -310,14 +310,18 @@ p {
     }
 
     .hero {
-        grid-template-columns: repeat(1, 350px);
+        grid-template-columns: repeat(1, 500px);
         gap: 50px;
+        row-gap: 0;
+        text-align: center;
     }
 
     .hero-img {
         content: url(images/image-hero-mobile.png);
         width: 100%;
         grid-row: 1;
+        margin-top: 0;
+        height: 100%;
     }
 
     .hero-text {
@@ -502,7 +506,6 @@ p {
     }
     /* End Company Drop Menu */
 
-
 /* Drop menu hover  */
     .drop-menu li a:hover {
         background-color: rgba(0, 0, 0, 0.1);
@@ -519,9 +522,30 @@ p {
 
     .icons img {
         width: 70px;
-        margin: 10px;
+        margin:  0px 10px;
     }
 
 }
 
+
+@media (max-width: 500px){
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        grid-template-columns: repeat(1, 370px);
+        gap: 50px;
+        row-gap: 0;
+        text-align: center;
+    }
+
+    .hero-img {
+        content: url(images/image-hero-mobile.png);
+        width: 100%;
+        grid-row: 1;
+        margin-top: 0;
+        height: 100%;
+    }
+}
 /* END MEDIA QUERY  */
