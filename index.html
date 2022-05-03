@@ -11,56 +11,17 @@
 </head>
 
 <body>
-  <div class="menu-bar">
-    <div class="logo">
-      <img src="images/logo.svg" alt="logo" class="logo-img">
-    </div>
-
-    <div class="hamburger">
-      <img src="images/icon-menu.svg" alt="">
-    </div>
-
-    <nav class="nav-1">
-      <ul>
-        <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
-          <div class="drop-menu">
-            <ul>
-              <li><a href="#"><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
-              <li><a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a></li>
-              <li><a href="#"><img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
-              <li><a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
-          <div class="drop-menu-1">
-            <ul>
-              <li><a href="#"> History</a></li>
-              <li><a href="#"> Our Team</a></li>
-              <li><a href="#"> Blog</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-
-    <nav class="nav-2">
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><button>Register</button></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="overlay">
-    <div class="mobile-nav">
-      <div class="close-menu">
-        <img src="images/icon-close-menu.svg" alt="">
+  <section class="Navigation-bar">
+    <div class="menu-bar">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" class="logo-img">
       </div>
 
-      <nav class="nav-1m">
+      <div class="hamburger">
+        <img src="images/icon-menu.svg" alt="">
+      </div>
+
+      <nav class="nav-1">
         <ul>
           <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
             <div class="drop-menu">
@@ -72,8 +33,8 @@
               </ul>
             </div>
           </li>
-          <li class="company"><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
-            <div class="drop-menu-2">
+          <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+            <div class="drop-menu-1">
               <ul>
                 <li><a href="#"> History</a></li>
                 <li><a href="#"> Our Team</a></li>
@@ -81,19 +42,62 @@
               </ul>
             </div>
           </li>
-          <li class="Careers"><a href="#">Careers</a></li>
+          <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>
 
-      <nav class="nav-2m">
+      <nav class="nav-2">
         <ul>
-          <li><a href="#" class="login">Login</a></li>
+          <li><a href="#">Login</a></li>
           <li><button>Register</button></li>
         </ul>
       </nav>
     </div>
-  </div>
+  </section>
+
+  <section class="mobile-navigation">
+    <div class="overlay">
+      <div class="mobile-nav">
+        <div class="close-menu">
+          <img src="images/icon-close-menu.svg" alt="">
+        </div>
+
+        <nav class="nav-1m">
+          <ul>
+            <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+              <div class="drop-menu">
+                <ul>
+                  <li><a href="#"><img src="images/icon-todo.svg" alt=""> Todo List</a></li>
+                  <li><a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a></li>
+                  <li><a href="#"><img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
+                  <li><a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="company"><a href="#">Company <img src="images/icon-arrow-down.svg" alt="" class="arrow-down"></a>
+              <div class="drop-menu-2">
+                <ul>
+                  <li><a href="#"> History</a></li>
+                  <li><a href="#"> Our Team</a></li>
+                  <li><a href="#"> Blog</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="Careers"><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-2m">
+          <ul>
+            <li><a href="#" class="login">Login</a></li>
+            <li><button>Register</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
 
   <section class="hero">
     <div class="hero-text">
@@ -120,12 +124,10 @@
 
   <script src="index.js"></script>
 
- <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Oderinde Emmanuel</a>.
-  </div>
-</body>
-
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
 </body>
 
 </html>
