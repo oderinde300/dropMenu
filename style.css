@@ -10,7 +10,7 @@
     background-color: #FAFAFA;
 }
 
-/* MENU BAR */
+/* NAVIGATION BAR */
 .menu-bar {
     display: flex;
     align-items: center;
@@ -171,7 +171,7 @@ ul {
     margin: 15px 15px;
 }
 
-/* END MENU BAR */
+/* END NAVIGATION BAR */
 
 
 
@@ -243,7 +243,7 @@ p {
     }
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
     .hero {
         max-width: 900px;
         grid-template-columns: repeat(2, 450px);
@@ -310,6 +310,9 @@ p {
     }
 
     .hero {
+        position: relative;
+        top: -100px;
+        z-index: -1;
         grid-template-columns: repeat(1, 500px);
         gap: 50px;
         row-gap: 0;
@@ -346,8 +349,13 @@ p {
     }
 
     .hero-text button {
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        color: white;
+        background-color: black;
     }
+
+    /* MOBILE NAVIGATION */
 
     .hamburger {
         display: block;
@@ -387,7 +395,6 @@ p {
         background-color: transparent;
         outline: none;
         border-radius: 10px;
-        font-size: 1.3rem;
         color: rgba(0, 0, 0, 0.5);
         border: 1px solid rgba(0, 0, 0, 0.5);
 
@@ -400,7 +407,7 @@ p {
     }
 
     .mobile-nav .nav-2m .login {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .overlay {
@@ -439,9 +446,6 @@ p {
         transition: all .3s ease;
     }
 
-    .mobile-nav a {
-        font-size: 1.3rem;
-    }
 
     /* End mobile nav design  */
 
@@ -471,10 +475,10 @@ p {
         padding-right: 10px;
     }
 
-        /* End of Features drop menu  */
+    /* End of Features drop menu  */
 
-    
-   
+
+
 
     /* Company Drop Menu */
 
@@ -490,7 +494,7 @@ p {
         width: 250px;
         box-shadow: none;
         transition: all .3s ease;
-        
+
     }
 
     .drop-menu-2 ul {
@@ -504,9 +508,10 @@ p {
     .drop-menu-2 ul li {
         margin: 15px 15px;
     }
+
     /* End Company Drop Menu */
 
-/* Drop menu hover  */
+    /* Drop menu hover  */
     .drop-menu li a:hover {
         background-color: rgba(0, 0, 0, 0.1);
         transition: all .3s ease;
@@ -517,18 +522,20 @@ p {
         transition: all .3s ease;
     }
 
- /* End Drop menu hover  */
+    /* End Drop menu hover  */
+
+    /* END MOBILE NAVIGATION */
 
 
     .icons img {
         width: 70px;
-        margin:  0px 10px;
+        margin: 0px 10px;
     }
 
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     .hero-text h1 {
         font-size: 2.2rem;
     }
@@ -540,12 +547,6 @@ p {
         text-align: center;
     }
 
-    .hero-img {
-        content: url(images/image-hero-mobile.png);
-        width: 100%;
-        grid-row: 1;
-        margin-top: 0;
-        height: 100%;
-    }
 }
-/* END MEDIA QUERY  */
+
+/* END MEDIA QUERY  *?
